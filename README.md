@@ -1,7 +1,8 @@
 # Face Recognition Attendance System
 
 ## Overview
-Face Recognition Attendance System is a Python-based application that utilizes facial recognition technology to automate attendance tracking. This system provides a convenient and efficient way to record attendance without the need for manual processes.
+Overview
+Face Recognition Attendance System is a Python-based application that utilizes facial recognition technology, specifically the **VGG Face algorithm**, to automate attendance tracking. This system provides a convenient and efficient way to record attendance without the need for manual processes.
 
 ## Features
 - **Face Detection**: Automatically detects faces in images or live video streams.
