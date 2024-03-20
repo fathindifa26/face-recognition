@@ -7,11 +7,11 @@ import os
 
 if __name__ == "__main__":
     while True:
-        directory = directory.directory
+        dir_path = directory.directory
         os.system('cls' if os.name == 'nt' else 'clear')
 
         # Mendapatkan lokasi penyimpanan foto dari variabel lingkungan atau menggunakan nilai default jika tidak ada
-        photo_storage_path = os.path.join(directory, 'foto', '0_foto_presensi')
+        photo_storage_path = os.path.join(dir_path, 'foto', '0_foto_presensi')
 
         # Menghapus file yang ada di folder penyimpanan foto
         file_list = os.listdir(photo_storage_path)
