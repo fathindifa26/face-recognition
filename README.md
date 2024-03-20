@@ -23,6 +23,12 @@ Face Recognition Attendance System is a Python-based application that utilizes f
 4. **Update File Paths**:
    - Navigate to the `config` directory and open the `directory.py` file.
    - Modify the file paths for database connection and face recognition model paths according to your setup.
+   - Update the `directory` variable to specify the directory where your project resides. You can use an environment variable or a specific path. For example:
+     ```python
+     import os
+     directory = os.environ.get('DIRECTORY', '/Users/your_project')
+     photo_booth = "/Users/your_username/Pictures/Photo Booth Library/Pictures"
+     ```
    - Save the changes and close the file.
 5. Download the VGG Face weights file from [Kaggle](https://www.kaggle.com/datasets/evertwydoodt/vgg-face-weights).
 6. Place the downloaded `vgg_face_weights.h5` file in the same directory as the project files.
