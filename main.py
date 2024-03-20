@@ -2,7 +2,6 @@ from capture_photo_with_photobooth import test_camera_with_third_party_app
 from register_new_user import register_new_user
 from pengguna_baru import pengguna_baru
 from presensi_pengguna_lama import execute_database
-from model import run_model
 import directory
 import os
 
@@ -12,7 +11,7 @@ if __name__ == "__main__":
         os.system('cls' if os.name == 'nt' else 'clear')
 
         # Mendapatkan lokasi penyimpanan foto dari variabel lingkungan atau menggunakan nilai default jika tidak ada
-        photo_storage_path = os.path.join(directory, 'foto','0_foto_presensi')
+        photo_storage_path = os.path.join(directory, 'foto', '0_foto_presensi')
 
         # Menghapus file yang ada di folder penyimpanan foto
         file_list = os.listdir(photo_storage_path)
@@ -24,8 +23,11 @@ if __name__ == "__main__":
         test_camera_with_third_party_app(photo_storage_path)
         os.system('cls' if os.name == 'nt' else 'clear')
 
+        input('Proses pengambilan foto selesai. Tekan ENTER untuk melanjutkan...')
+
         # Face Recognition bekerja
         print('loading....')
+        from model import run_model
         hasil = run_model()
 
         if hasil:
@@ -40,4 +42,4 @@ if __name__ == "__main__":
             print('Anda belum terdaftar')
             pengguna_baru()
             os.system('cls' if os.name == 'nt' else 'clear')
-            input('Anda sudah terdaftar! Bersiap diri untuk melakukan presensi. Untuk melanjutkan tekan ENTER')
+            input('Anda sudah terdaftar! Bersiap diri untuk melakukan presensi. Tekan ENTER untuk melanjutkan...')

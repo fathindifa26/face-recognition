@@ -7,14 +7,10 @@ import warnings
 from sklearn.metrics import precision_recall_curve, accuracy_score, f1_score, precision_score, recall_score
 import directory
 
-directory = directory.directory
-
-
-
 # suppress display of warnings
 def run_model():
-    directory = directory.directory
-    source_dir = os.path.join(directory, 'foto')
+    dir_path = directory.directory
+    source_dir = os.path.join(dir_path, 'foto')
     warnings.filterwarnings('ignore')
     class IdentityMetadata():
         def __init__(self, base, name, file):
@@ -151,3 +147,5 @@ def run_model():
         return closest_label
     else:
         return False
+
+run_model()

@@ -20,8 +20,8 @@ def is_name_registered(name):
 
 # Fungsi untuk membuat folder baru berdasarkan nama dan menentukan save path
 def create_folder(name):
-    directory = directory.directory
-    base_path = os.path.join(directory, 'foto')
+    dir_path = directory.directory
+    base_path = os.path.join(dir_path, 'foto')
     folder_path = os.path.join(base_path, name)
     os.makedirs(folder_path, exist_ok=True)
     return folder_path
