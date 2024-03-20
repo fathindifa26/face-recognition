@@ -1,7 +1,7 @@
-# Face Recognition Attendance System
+# Face Recognition Attendance System (Only Compatible with Macbook)
 
 ## Overview
-Face Recognition Attendance System is a Python-based application that utilizes facial recognition technology, specifically the **VGG Face algorithm**, to automate attendance tracking. This system provides a convenient and efficient way to record attendance without the need for manual processes.
+Face Recognition Attendance System is a Python-based application that utilizes facial recognition technology, specifically the **VGG Face algorithm**, to automate attendance tracking. This system provides a convenient and efficient way to record attendance without the need for manual processes. Please note that this application is exclusively compatible with Macbook due to its reliance on the Photo Booth application for capturing photos.
 
 ## Features
 - **Face Detection**: Automatically detects faces in images or live video streams.
@@ -26,13 +26,15 @@ Face Recognition Attendance System is a Python-based application that utilizes f
    - Save the changes and close the file.
 5. Download the VGG Face weights file from [Kaggle](https://www.kaggle.com/datasets/evertwydoodt/vgg-face-weights).
 6. Place the downloaded `vgg_face_weights.h5` file in the same directory as the project files.
-7. Run the `main.py` script to start the application.
+7. **Note**: As this application is designed specifically for Macbook, ensure you have the Photo Booth application installed and accessible.
+8. Run the `main.py` script to start the application.
     ```bash
     python main.py
     ```
-8. Follow the on-screen instructions to perform tasks such as taking attendance, registering new users, etc.
+9. Follow the on-screen instructions to perform tasks such as taking attendance, registering new users, etc.
 
 ## Requirements
+- Macbook
 - Python 3.11
 - OpenCV
 - TensorFlow
