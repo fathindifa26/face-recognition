@@ -21,7 +21,7 @@ Face Recognition Attendance System is a Python-based application that utilizes f
     pip install -r requirements.txt
     ```
 4. **Update File Paths**:
-   - Navigate to the `config` directory and open the `config.py` file.
+   - Navigate to the `config` directory and open the `directory.py` file.
    - Modify the file paths for database connection and face recognition model paths according to your setup.
    - Save the changes and close the file.
 5. Download the VGG Face weights file from [Kaggle](https://www.kaggle.com/datasets/evertwydoodt/vgg-face-weights).
