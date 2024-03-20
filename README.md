@@ -11,17 +11,6 @@ Face Recognition Attendance System is a Python-based application that utilizes f
 - **Flexible Configuration**: Easily customizable to adapt to various environments and user requirements.
 
 ## Installation
-1. Clone this repository to your local machine.
-    ```bash
-    git clone https://github.com/fathindifa26/face-recognition-attendance.git
-    ```
-2. Install the required dependencies.
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Configure the application settings such as database connection and face recognition model paths.
-
-## Usage
 1. Download the repository from GitHub to your local machine.
    - Visit the [GitHub repository](https://github.com/fathindifa26/face-recognition-attendance).
    - Click on the green "Code" button and select "Download ZIP".
@@ -35,21 +24,19 @@ Face Recognition Attendance System is a Python-based application that utilizes f
    - Navigate to the `config` directory and open the `config.py` file.
    - Modify the file paths for database connection and face recognition model paths according to your setup.
    - Save the changes and close the file.
-5. Run the `main.py` script to start the application.
+5. Download the VGG Face weights file from [Kaggle](https://www.kaggle.com/datasets/evertwydoodt/vgg-face-weights).
+6. Place the downloaded `vgg_face_weights.h5` file in the same directory as the project files.
+7. Run the `main.py` script to start the application.
     ```bash
     python main.py
     ```
-6. Follow the on-screen instructions to perform tasks such as taking attendance, registering new users, etc.
+8. Follow the on-screen instructions to perform tasks such as taking attendance, registering new users, etc.
 
 ## Requirements
 - Python 3.11
 - OpenCV
 - TensorFlow
 - Other dependencies listed in `requirements.txt`
-
-## Contributors
-- John Doe (@johndoe)
-- Jane Smith (@janesmith)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
